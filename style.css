@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Open+Sans:wght@300;400;600;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*
+{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Montserrat', sans-serif;
+   font-family: 'Open Sans', sans-serif;
+   font-family: 'Poppins', sans-serif; 
+}
+
+.intro
+{
+   min-height: 100vh;
+   background-image: url(./images/fullstack.jpg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.headings
+{
+   color: black;
+   max-width: 800px;
+   margin: 0 auto;
+   padding: 200px 0;
+}
+
+.headings h1
+{
+   font-size: 45px;
+   letter-spacing: 1px;
+   font-weight: 300;
+}
+
+.intro .headings .textLarge,
+.work .workText .textLarge
+{
+   font-size: 70px;
+   font-weight: 700;
+   letter-spacing: 2px;
+}
+
+.work
+{
+   background-color: rgb(21, 19, 19);
+}
+
+.workText
+{
+   color: #fff;
+   padding: 40px 0;
+   text-align: center;
+   font-size: 30px;
+   text-transform: uppercase;
+   word-spacing: 5px;
+}
+
+.color
+{
+   background-color: lightgray;
+}
+
+.skills
+{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+   place-items: center;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 30px 0;
+}
+.card img
+{
+   width: 100%;
+   border-radius: 10px 10px 0 0;
+}
+
+.card
+{
+   background-color: #fff;
+   width: 320px;
+   max-height: 500px;
+   box-shadow: 3px 8px 10px rgba(0, 0, 0, 0.3);
+   border-radius: 10px;
+   display: grid;
+   place-items: center;
+   transition: 0.3s ease-in-out;
+}
+
+.card:hover
+{
+   transform: scale(1.07);
+   box-shadow: 3px 8px 10px rgba(0, 0, 0, 0.6);
+   transition: 0.3s ease-in-out;
+}
+
+.skill h3
+{
+   text-align: center;
+   margin-bottom: 8px;
+   font-size: 20px;
+}
+
+.skill p
+{
+   text-align: justify;
+   padding: 0 15px 15px 15px;
+}
+
+.reach
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.contactMe, 
+.aboutMe
+{
+   margin: 30px;
+   min-height: 300px;
+}
+
+.colorOne
+{
+   background-color: #5D6D7E;
+}
+
+.colorTwo
+{
+   background-color: #34495E;
+}
+
+.contactMe h1, .aboutMe h1
+{
+   font-size: 40px;
+   color: #fff;
+   text-align: center;
+}
+
+.contactMe p, .aboutMe p
+{
+   font-size: 20px;
+   color: #fff;
+}
+
+.contactMe a
+{
+   text-decoration: none;
+   color: lightblue;
+}
+
+.greatings
+{
+   text-align: center;
+   background-color: rgb(28, 28, 28);
+}
+
+.greatingText
+{
+   padding: 30px 0;
+   color: #fff;
+   font-size: 25px;
+}
+
+@media (max-width: 786px)
+{
+   .intro
+   {
+      min-height: 50vh;
+   }
+
+   .headings h1
+   {
+      font-size: 25px;
+      letter-spacing: 1px;
+      font-weight: 500;
+      text-align: center;
+   }
+
+   .intro .headings .textLarge,
+   .work .workText .textLarge
+   {
+      font-size: 40px;
+      font-weight: 600;
+      letter-spacing: 1px;
+   }
+   
+   .workText
+   {
+      font-size: 20px;
+      word-spacing: 2px;
+   }
+
+   .reach
+   {
+      flex-direction: column;
+   }
+
+   .contactMe
+   {
+      min-height: auto;
+   }
+   .contactMe h1, .aboutMe h1
+   {
+      font-size: 30px;
+   }
+
+   .contactMe p, .aboutMe p
+   {
+      font-size: 18px;
+   }
+
+   .greatingText h1
+   {
+      font-size: 21px;
+      font-weight: 500;
+   }
+
+   .skills
+   {
+      row-gap: 20px;
+   }
+}
